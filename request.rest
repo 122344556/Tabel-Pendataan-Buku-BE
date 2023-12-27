@@ -1,0 +1,42 @@
+GET http://localhost:5000/users
+
+//get
+###
+GET http://localhost:5000/users/658af34ebb2009a7ae0f9752
+
+
+//create
+###
+POST http://localhost:5000/users 
+Content-Type: application/json
+
+{
+    "judul":"Samuel",
+    "penulis":"Itakrn",
+    "penerbit":"Akad",
+    "tahun_terbit":"2019",
+    "jumlah_halaman":"200",
+    "harga":30000,
+    "kategori":"Fiksi & Wattpad",
+    "Rating":4
+}
+
+//update
+###
+PATCH http://localhost:5000/users/658af34ebb2009a7ae0f9752
+Content-Type: application/json
+
+{
+    "judul":"Areksa",
+    "penulis":"Itakrn",
+    "penerbit":"Akad",
+    "tahun_terbit":"2019",
+    "jumlah_halaman":"200",
+    "harga":30000,
+    "kategori":"Fiksi & Wattpad",
+    "Rating":4
+}
+
+//delete
+###
+DELETE http://localhost:5000/users/658af34ebb2009a7ae0f9752
